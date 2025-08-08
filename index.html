@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotFlix - Seu Recomendador de Filmes IA</title>
+    <link rel="stylesheet" href="src/css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="logo">🤖 BotFlix</h1>
+            <p class="subtitle">Seu assistente pessoal para encontrar o filme perfeito</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <h2 class="search-title">O que você tá afim de assistir hoje?</h2>
+            
+            <div class="input-group">
+                <textarea 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Digite como você está se sentindo ou o que quer assistir...
+
+Exemplos:
+• Quero algo engraçado pra relaxar depois do trabalho
+• Estou triste, preciso de uma comédia romântica
+• Quero adrenalina, algo com muita ação e explosões
+• Algo pra assistir com a família no domingo
+• Filmes que me façam chorar
+• Preciso de inspiração, algo motivacional"></textarea>
+            </div>
+
+            <button id="searchBtn" class="search-btn">
+                ✨ Encontrar Filmes Perfeitos
+            </button>
+
+            <!-- Examples -->
+            <!-- <div class="examples">
+                <p class="examples-title">Ou clique em uma sugestão:</p>
+                <div class="example-tags">
+                    <span class="example-tag" data-text="Quero algo engraçado pra relaxar">😄 Comédia relaxante</span>
+                    <span class="example-tag" data-text="Estou triste, algo pra me animar">😢 Preciso me animar</span>
+                    <span class="example-tag" data-text="Quero adrenalina e ação">💥 Ação e adrenalina</span>
+                    <span class="example-tag" data-text="Algo pra família assistir junto">👨‍👩‍👧‍👦 Para família</span>
+                    <span class="example-tag" data-text="Filme romântico pra namorada">💕 Romance</span>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Loading -->
+        <!-- <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <p>🤖 BotFlix analisando seus gostos...</p>
+        </div> -->
+
+        <!-- Results -->
+        <div id="results" class="results">
+            <h3 class="results-title">🍿 Filmes perfeitos para você</h3>
+            <div id="moviesGrid" class="movies-grid">
+                <!-- Movies will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@ async function buscarFilmes() {
     console.log('Enviando para N8N:', input.value.trim());
 
     // Fazer POST para o webhook do N8N
-    const response = await fetch('https://botflix-1.app.n8n.cloud/webhook-test/botflix', {
+    const response = await fetch('https://botflix-1.app.n8n.cloud/webhook/botflix', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

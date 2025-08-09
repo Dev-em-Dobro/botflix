@@ -112,6 +112,7 @@ body {
 
 .results {
     display: none;
+    padding: 20px;
 }
 
 .results.show {
